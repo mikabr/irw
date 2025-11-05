@@ -3,5 +3,6 @@
 
 library(irw)
 
-# fetch data from {{n_tables}} specified tables
-irw_tables <- irw_fetch({{tables}})
+irw_tables <- irw_filter({{filter_str}})
+
+irw_data <- irw_fetch(irw_tables)
